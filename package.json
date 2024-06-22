@@ -1,0 +1,11 @@
+{
+  "name": "uzx-weboldal",
+  "version": "1.0.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "Test.bat"
+  },
+  "author": "UZX (Csiba zsombor)",
+  "license": "ISC"
+}

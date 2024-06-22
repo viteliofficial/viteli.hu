@@ -1,0 +1,16 @@
+.link-color{
+    font-size: 0.6cm;
+    color: black;
+    transition: all 0.5s;
+    padding: auto;
+    text-decoration: none;
+}
+
+.link-color:hover{
+    font-size: 0.7cm;
+    transition: all 0.5s;
+    padding: auto;
+    border-radius: 15px; 
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}

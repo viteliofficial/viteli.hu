@@ -1,0 +1,685 @@
+@font-face{
+    font-family: TW-Cen-MT-Condensed;
+    src: url(../FONTS/Tw\ Cen\ MT\ Condensed\ Bold.ttf);
+}
+@font-face{
+    font-family: Poppins-Light;
+    src: url(../FONTS/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face{
+    font-family: Poppins-Bold;
+    src: url(../FONTS/Poppins/Poppins-Bold.ttf);
+}
+@font-face{
+    font-family: Leoscar;
+    src: url(../FONTS/Leoscar-Serif.ttf);
+}
+@font-face{
+    font-family: coolvetica;
+    src: url(../FONTS/coolvetica\ condensed\ rg.otf);
+}
+
+@font-face{
+    font-family: QuickSand-Light;
+    src: url(../FONTS/QuickSand/Quicksand-Light.ttf);
+}
+
+@font-face{
+    font-family: QuickSand-Bold;
+    src: url(../FONTS/QuickSand/Quicksand-Medium.ttf);
+}
+
+@font-face{
+    font-family: BRUX;
+    src: url(../FONTS/Brux-Font/BRUX.otf);
+}
+@font-face{
+    font-family: Gatha;
+    src: url(../FONTS/ZTGatha-SemiBold.ttf);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins-Light';
+    background-image: url("../képek/background/background2024.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.iframe-mymusic iframe{
+    border-radius: 8px;
+}
+.img img{
+    height: 350px;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+}
+.kuldott-kepet img{
+    height: 150px;
+    border-radius: 9px;
+    margin-left: 0.01cm;
+    float: left;
+    text-align: left;
+    margin-top: 1cm;
+}
+.kuldott-kepet p{
+    color: white;
+    float: left;
+    margin-left: -4.2cm;
+    margin-top: 5.1cm;
+}
+.nyelv{
+    
+    border-radius: 15px;
+    font-size: 0.5cm;
+    color: white;
+    padding: auto;
+    float: right;
+    text-decoration: none;
+}
+#countdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatikusan illeszkedő oszlopok */
+    gap: 15px;
+    font-size: 30px;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+/* Időelemek */
+.time {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    margin: 0 0 5px;
+    color: var(--text-color);
+    font-family: var(--title-font);
+}
+
+/* Cím */
+#countdown-title {
+    font-family: var(--title-font);
+    color: var(--text-color);
+}
+
+/* Lejárt link */
+#expired-link {
+    display: none;
+}
+#netby-ai{
+    display: none;
+}
+option{
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(14, 14, 14, 0.13);
+}
+select{
+    color: white;
+    border-radius: 15px;
+    background-color: rgba(14, 14, 14, 0.096);
+}
+.button{
+    background-color: #333;
+    border-radius: 2px;
+    font-size: 0.8cm;
+}
+.gomb a{
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.384);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: auto;
+}
+.gomb a:hover{
+    border-radius: 100px;
+    background-color: rgb(224, 224, 224);
+    border-color: rgb(224, 224, 224);
+    transform: translateY(-3px);
+    transition: all 0.5s;
+}
+.gomb a:active{
+    transform: translateY(1px);
+}
+.gombok{
+    font-family: 'TW-Cen-MT-Condensed';
+    float: auto;
+    border-bottom: 5cm;
+    margin-top: -0.5cm;
+    margin-left: -0.1cm;
+    margin-right: -0.1cm;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    background-color: rgba(255, 255, 255, 0.056);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    transition: all 0.3s;
+    border-radius: 0px;
+    padding: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gombok:hover{
+    box-shadow: 0 25px 20px rgba(0, 0, 0, 0.39);
+    transition: all 0.3s;
+}
+.gombok a {
+    border-radius: 15px;
+    font-size: 0.8cm;
+    color: white;
+    padding-right: 0.5cm;
+    transition: all 0.5s;
+    padding-left: 0.2cm;
+    padding: auto;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.gombok a:hover{
+    opacity: 100%;
+    font-size: 1cm;
+    color: white;
+    transition: all 0.3s;
+    padding: auto;
+    border-radius: 0px;
+    transition: all 0.4s;
+    transition: all 0.5s;
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px){
+body{
+    background-color: rgb(8, 7, 22);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a{
+    font-size: 0.7cm;
+}
+.gomb a:hover{
+    transition: none;
+}
+.gombok{
+    font-family: 'Poppins-Light';
+    float: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    transition: all 1s;
+    text-align: center;
+}
+
+.gombok a {
+    display: list-item;
+    font-size: 0.6cm;
+    text-align: center;
+
+}
+
+.gombok a:hover{
+    font-size: 0.7cm;
+    transition: all 0.3s;
+    padding: auto;
+}
+
+.games{
+    float: center;
+    text-align: center;
+    padding-left: 1cm;
+    padding: 1cm;
+    border-radius: 25px;
+    
+    height: 200px;
+    width: 200px;
+}
+
+.games a img:hover{
+    padding: 0.2cm;
+    transition: all 0.2s;
+    height: 200px;
+    width: 200px;
+    
+    
+}
+
+.games a img:hover:after{
+    padding: 0.2cm;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.2s;
+    height: 200px;
+    width: 200px;
+}
+.games a img:before:hover{
+    padding: 0.2cm;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.2s;
+    height: 200px;
+    width: 200px;
+}
+.games a {
+
+transition: all 0.8s;
+height: 200px;
+width: 200px;
+}
+.games a img{
+border-radius: 25px;
+transition: all 0.2s;
+height: 200px;
+width: 200px;
+}
+
+.time {
+	margin: 5px;
+}
+.time h2 {
+	font-size: 30px;
+}
+.time small {
+	font-size: 25px;
+}
+
+}
+.fejlesztesalatt {
+    color: rgb(241, 213, 54);
+    font-size: 0.5cm;
+    padding: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 15px;
+    float: center;
+    width: 200px;
+}
+
+.leiras {
+    color: white;
+    font-family: 'QuickSand-Bold';
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.056);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    margin: auto;
+    margin-top: 1cm;
+    float: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.leiras h2{
+    font-family: 'TW-Cen-MT-Condensed';
+    color: white;
+    border-radius: 6px;
+    float: auto;
+    padding: auto;
+}
+
+.leiras h3{
+    color: rgb(255, 175, 2);
+    border-radius: 6px;
+    float: auto;
+    padding: auto;
+}
+
+.udvozollek {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.056);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    margin-left: auto;
+    margin-left: right;
+    margin-top: 1cm;
+    float: auto;
+    text-align: center;
+    padding: auto;
+    text-align: center;
+    color: white;
+    font-size: 0.5cm;
+}
+.udvozollek h1{
+    color: white;
+    text-decoration: none;
+}
+.sarokverziokijelzo{
+    font-family: 'Gatha';
+    text-align: center;
+    float: center;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+    padding: auto;
+    width: 100px;
+    margin-bottom: auto;
+    font-size: 0.4cm;
+    border-radius: 15px;
+}
+.sarokverziokijelzo h4 h5{
+    font-family: 'Leoscar';
+
+}
+.kiemeles{
+    background-color: darkslateblue;
+}
+.egyebweboldalak{
+    font-family: 'TW-Cen-MT-Condensed';
+    color: black;
+    transition: all 1s;
+    float: center;
+    text-align: center;
+    padding: auto;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.egyebweboldalak a {
+    font-size: 0.6cm;
+    color: black;
+    transition: all 0.5s;
+    padding: auto;
+    text-decoration: none;
+}
+
+.egyebweboldalak a:hover {
+    font-size: 0.7cm;
+    color: #000000;
+    transition: all 0.4s;
+    padding: auto;
+    border-radius: 15px; 
+    border-radius: 5px;
+}
+
+.games{
+    float: center;
+    text-align: center;
+    padding-left: 1cm;
+    border-radius: 25px;
+   
+}
+
+.games a img:hover{
+    padding: 0.2cm;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.2s;
+    
+}
+
+.games a img:hover:after{
+    padding: 0.2cm;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+.games a img:before:hover{
+    padding: 0.2cm;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+
+.games a {
+
+transition: all 0.8s;
+}
+.games a img{
+border-radius: 25px;
+transition: all 0.2s;
+image-resolution: 100%;
+}
+
+.red_text{
+    color: red;
+}
+
+.pythontext{
+    color: white;
+}
+
+.nepszeru{
+    float: center;
+    text-align: center;
+    padding-left: 1cm;
+    border-radius: 25px;
+   
+}
+
+.unreal_engine_Jatek{
+    float: center;
+    text-align: center;
+    padding-left: 1cm;
+    border-radius: 25px;
+   
+}
+
+.unreal_engine_Jatek a img:hover{
+    padding: 0.2cm;
+    background-color: white;
+    transition: all 0.2s;
+    
+}
+
+.unreal_engine_Jatek a img:hover{
+    padding: 0.2cm;
+    background-color: white;
+    transition: all 0.2s;
+    
+}
+
+.unreal_engine_Jatek a img:hover:after{
+    padding: 0.2cm;
+    background-color: white;
+    transition: all 0.2s;
+}
+.unreal_engine_Jatek a img:before:hover{
+    padding: 0.2cm;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.unreal_engine_Jatek a {
+
+    transition: all 0.8s;
+}
+
+.unreal_engine_Jatek a img{
+    border-radius: 25px;
+    transition: all 0.2s;
+    image-resolution: 100%;
+}
+
+
+
+.nepszeru a img:hover{
+    padding: 0.2cm;
+    background-color: rgb(0, 119, 255);
+    transition: all 0.2s;
+    
+}
+
+.nepszeru a img:hover:after{
+    padding: 0.2cm;
+    background-color: rgb(0, 119, 255);
+    transition: all 0.2s;
+}
+.nepszeru a img:before:hover{
+    padding: 0.2cm;
+    background-color: rgb(0, 119, 255);
+    transition: all 0.2s;
+}
+
+.nepszeru a {
+
+    transition: all 0.8s;
+}
+
+.nepszeru a img{
+    border-radius: 25px;
+    transition: all 0.2s;
+    image-resolution: 100%;
+}
+
+.nepszeru_text{
+  background-color: rgba(0, 0, 0, 0.493);
+  float: center;
+  text-align: center;
+  margin-left: 18cm;
+  margin-right: 18cm;
+  color: white;
+  border-radius: 15px;
+}
+
+.unrael_engine_jatek_text{
+    background-color: rgba(0, 0, 0, 0.493);
+    float: center;
+    text-align: center;
+    margin-left: 18cm;
+    margin-right: 18cm;
+    color: white;
+    border-radius: 15px;
+}
+
+a{
+    display: inline-block;
+    position: relative;
+    color: #fff
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    transition: transform .25s ease-out
+}
+a:hover{
+  color: white;
+  transform: scale(1, 1);
+  transition: transform 0.3s ease;
+}
+
+a:hover::after{
+    transform: scaleX(1)
+}
+.website-name{
+    font-family: 'TW-Cen-MT-Condensed';
+    text-align: left;
+    font-size: 1cm;
+    border-radius: 6px;
+    float: auto;
+    padding: auto;
+    color: transparent;
+    background-image: linear-gradient(to right, white,rgb(185, 185, 185));
+    -webkit-background-clip: text;
+    animation: animate 3s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+}
+
+.underline{
+    font-family: 'QuickSand-Bold';
+    font-size: 0.6cm;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.384);
+    text-align: center;
+    float: center;
+    background-color: rgba(31, 30, 30, 0);
+    border-radius: 15px;
+    margin-left: -0.18cm;
+    margin-right: -0.18cm;
+}
+footer {
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    margin-right: 40px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-media-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .bottom-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+  .netbylogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 200px;
+    border-radius: 200px;
+  }
+  .netbylogo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 200px;
+    border-radius: 200px;
+  }
+  .informacio{
+    font-family: 'Poppins-Bold';
+    background-color: rgba(167, 0, 0, 0.829);
+    text-align: center;
+    color: white;
+    font-size: 0.7cm;
+    border-radius: 15px;
+  }
+  

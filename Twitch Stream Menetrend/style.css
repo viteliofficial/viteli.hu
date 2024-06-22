@@ -1,0 +1,373 @@
+@font-face{
+    font-family: Poppins-Light;
+    src: url(../FONTS/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face{
+    font-family: Poppins-Bold;
+    src: url(../FONTS/Poppins/Poppins-Bold.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins-Light';
+    background-color: rgb(24, 24, 24);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
+}
+h1{
+    color: white;
+    float: auto;
+    padding: auto;
+    text-decoration: none;
+}
+h2{
+    color: rgb(255, 166, 0);
+    float: auto;
+    padding: auto;
+    text-decoration: none;
+}
+.p-text{
+    text-align: center;
+    color: rgb(218, 218, 218);
+}
+a{
+    color: white;
+    float: center;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(36, 36, 36);
+    transition: all 0.6s;
+    cursor: pointer;
+    margin-top: 0cm;
+    margin-left: 17cm;
+    margin-right: 17cm;
+}
+a:hover{
+    color: #ff0055;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+table{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+
+}
+tr{
+    background-color: #a3a3a310;
+    cursor: pointer;
+}
+th{
+    background-color: #a3a3a338;
+    transition: all 0.6s;
+    cursor: pointer;
+    width: 1cm;
+}
+th:hover{
+    background-color: #a3a3a31c;
+    color: #ff0055;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+.nap_hetfo{
+    background-color: #a3a3a31c;
+    color: #ff0055;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+.nap_kedd{
+    background-color: #a3a3a31c;
+    color: #ff0055;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+.nap_szerda{
+    background-color: #a3a3a31c;
+    color: #ff0055;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+.nap_csutortok{
+    background-color: #a3a3a31c;
+    color: #ff0055;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+.nap_pentek{
+    background-color: #a3a3a31c;
+    color: #ff0055;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+
+
+.jegy_5{
+    background-color: #a3a3a31c;
+    color: #ce0000;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+.jegy_4{
+    background-color: #a3a3a31c;
+    color: #d66000;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+.jegy_3{
+    background-color: #a3a3a31c;
+    color: rgb(255, 166, 0);
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+.jegy_2{
+    background-color: #a3a3a31c;
+    color: #5cb609;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+.jegy_1{
+    background-color: #a3a3a31c;
+    color: #00fff2;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+
+td{
+    background-color: #a3a3a31c;
+    transition: all 0.6s;
+}
+
+td:hover{
+    background-color: #a3a3a31c;
+    color: #ff0055;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+}
+.maintext{
+    font-size: 0.3cm;
+    float: center;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    
+}
+
+.maintext img{
+    
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+}
+
+
+.kirandulas_Képek{
+    text-align: center;
+    float: center;
+    padding: auto;
+}
+.kirandulas_Képek img {
+    width: 500px;
+    height: 480px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(255, 255, 255);
+    padding: auto;
+    transition: all 0.4s;
+}
+
+.kirandulas_Képek img:hover {
+  padding: 0.2cm;
+  border-width: 15px;
+  transition: all 0.4s;
+  height: 630px;
+  width: 650px;
+}
+.munkalist{
+    text-align: center;
+    float: center;
+    padding: auto;
+}
+.list{
+    float: center;
+    text-align: center;
+    color: white;
+}
+
+.list ol{
+    float: center;
+    text-align: center;
+    color: white;
+}
+
+.list li{
+    float: center;
+    text-align: center;
+    color: white;
+}
+.center_text{
+    text-align: center;
+    text-decoration: none;
+}
+.searchbar{
+    text-align: center;
+    margin-top: 0.5cm;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    
+}
+
+.searchbar button{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins-Light';
+}
+h3{
+    text-align: center;
+    float: center;
+    color: white;
+}
+input{
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins-Light';
+}
+.version a{
+    color: aquamarine;
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    float: center;
+    margin-top: 19cm;
+    margin-left: 10cm;
+    margin-right: 10cm;
+    transition: all 0.6s;
+}
+
+.version a:hover{
+    background-color: #a3a3a31c;
+    color: #ff0055;
+    background-color: rgb(14, 14, 14);
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.description{
+    text-align: center;
+    float: center;
+    color: white;
+    margin-top: -1cm;
+    padding-top: 0.01cm;
+}
+
+.alahuzas{
+    text-decoration: underline;
+}
+.alahuzas_kiemeles{
+    color: rgb(255, 166, 0);
+    text-decoration: underline;
+}
+
+.kiemeles{
+    color: rgb(255, 166, 0);
+    
+}
+.hide{
+    display: none;
+}
+
+video{
+    align-items: center;
+    text-align: center;
+    display: block;
+    float: center;
+    margin-left: 15cm;
+    margin-right: 15cm;
+    margin-top: -3cm;
+    border-radius: 25px
+}
+.fejlesztes_alatt{
+  text-align: center;
+  float: center;
+  background-color: #00000038;
+  border-radius: 10px;
+  margin-left: 20cm;
+  margin-right: 20cm;
+  color: rgb(207, 61, 61);
+}
+@media screen and (max-width: 500px){
+    
+    .maintext{
+        font-size: 0.28cm;
+        float: center;
+        text-align: center;
+    }
+    a{
+        font-size: 1.3cm;
+        color: white;
+        float: center;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        background-color: rgb(36, 36, 36);
+        transition: all 0.6s;
+        cursor: pointer;
+        margin-top: 0cm;
+        margin-left: 17cm;
+        margin-right: 17cm;
+        
+    }
+    a:hover{
+        color: #ff0055;
+        background-color: rgb(14, 14, 14);
+        transition: all 0.6s;
+    }
+    table{
+        
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        float: center;
+    }
+    tr{
+        background-color: #a3a3a310;
+        cursor: pointer;
+    }
+    th{
+        background-color: #a3a3a338;
+        transition: all 0.6s;
+        cursor: pointer;
+        font-size: 1.2cm;
+        width: 0.1cmcm;
+    }
+    th:hover{
+        background-color: #a3a3a31c;
+        color: #ff0055;
+        background-color: rgb(14, 14, 14);
+        transition: all 0.6s;
+    }
+    td{
+        font-size: 1.2cm;
+    }
+}
+

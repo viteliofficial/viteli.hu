@@ -1,0 +1,44 @@
+CACHE MANIFEST
+#v0.0.4 change this to force update
+
+CACHE:
+CSS/all.min.css
+CSS/ertekeles.css
+CSS/frissitesek.css
+CSS/kezdolap.css
+CSS/Linkek.css
+CSS/loading.css
+CSS/osz.css
+CSS/scrollbar.css
+CSS/setup.css
+CSS/tartalom.css
+CSS/tel.css
+HTML/Frissítések.html
+HTML/Információk.html
+HTML/Játékok.html
+HTML/Képek.html
+HTML/Linkek.html
+HTML/Linkek-YT.html
+HTML/setup.html
+JS/nyelv/nyelvdata
+JS/Setup/programs.js
+JS/engedélyek.js
+JS/ionicons.esm.js
+JS/ionicons.js
+JS/jquery.min.js
+JS/jsdelivr.js
+JS/JsonIndito.js
+JS/JsonIndito2.js
+JS/loading.js
+JS/pyscript.js
+JS/sütik.js
+JS/validation.js
+JSON/fejlesztők.json
+képek/2023. 04. 25. logo netby.png
+képek/azisx3 logo.png
+képek/hamarosan.png
+képek/hatterkep7.jpg
+PY/main.py
+index.html
+FONTS/Poppins/Poppins-Bold.ttf
+FONTS/Poppins/Poppins-Medium.ttf

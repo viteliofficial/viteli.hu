@@ -1,0 +1,3 @@
+echo "Elinditva!" 
+
+http-server

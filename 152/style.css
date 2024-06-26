@@ -1,0 +1,31 @@
+@font-face{
+    font-family: BebasNeue-Regular;
+    src: url(BebasNeue-Regular.ttf);
+}
+body{
+    background-color: black;
+    margin-top: 6cm;
+
+    color: white;
+    font-family: 'BebasNeue-Regular';
+}
+
+.border{
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    margin-left: 10cm;
+    margin-right: 10cm;
+}
+a{
+
+    font-size: 1.5cm;
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.137);
+    transition: all 0.1s;
+}

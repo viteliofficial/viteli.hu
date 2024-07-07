@@ -171,6 +171,20 @@ select{
 .gomb a:active{
     transform: translateY(1px);
 }
+.dc h2{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.056);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    margin-left: auto;
+    margin-left: right;
+    margin-top: 1cm;
+    float: auto;
+    text-align: center;
+    padding: auto;
+    text-align: center;
+    color: white;
+    font-size: 0.5cm;
+}
 .gombok{
     font-family: 'TW-Cen-MT-Condensed';
     float: auto;

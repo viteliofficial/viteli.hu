@@ -52,14 +52,3 @@ function incrementCounter() {
 
 // Initialize the counter if needed and increment
 initializeCounter();
-```
-
-### Explanation:
-
-1. **Initialize Firebase:** This section remains the same, where Firebase is initialized with your project’s configuration.
-
-2. **Reference to the Counter:** `const counterRef = database.ref('traffic_counter');` creates a reference to the `traffic_counter` node in your Firebase Realtime Database.
-
-3. **Check Counter Existence:** 
-   - The `initializeCounter` function checks if the `traffic_counter` node exists using `counterRef.once('value', snapshot => {...})`.
-   - If the snapshot exists, it calls `incrementCounter` to

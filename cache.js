@@ -3,8 +3,8 @@
 
     // List of files to update
     var filesToCacheBust = [
-        'CSS/style.css',
-        'JS/script.js',
+        'CSS/kezdolap.css',
+        'JS/sütik.js',
         'index.html'
     ];
 

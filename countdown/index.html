@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visszaszámlálás</title>
+    <style>
+        @keyframes colorChange {
+            0% { background-color: #2c3e50; }
+            25% { background-color: #34495e; }
+            50% { background-color: #2c3e50; }
+            75% { background-color: #34495e; }
+            100% { background-color: #2c3e50; }
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: colorChange 10s infinite;
+            color: #ecf0f1;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            flex-direction: column;
+            background-color: #2c3e50; /* Fallback color */
+        }
+
+        .image-row {
+            display: flex;
+            align-items: center;
+        }
+        .image-row img {
+            width: 120px;
+            border-radius: 75px;
+            margin-right: 10px; /* Add margin if you want some space between images */
+        }
+
+        #countdown {
+            font-size: 6vw; /* Flexible font size based on viewport width */
+            font-weight: lighter;
+            text-align: center; /* Center text for better mobile viewing */
+            padding: 0 10px; /* Add some padding for smaller screens */
+        }
+
+        #date {
+            font-family: monospace;
+            font-size: 3vw; /* Flexible font size based on viewport width */
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: center; /* Center text for better mobile viewing */
+        }
+
+        @media (min-width: 768px) {
+            #countdown {
+                font-size: 3em; /* Larger font size for larger screens */
+            }
+
+            #date {
+                font-size: 1em; /* Larger font size for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-row">
+        <img src="../képek/channels4_profile.jpg" alt="">
+        <img src="../képek/NetBy Logo new 2023. 10. 06.png" alt="">
+    </div>
+    <div id="countdown"></div>
+    <div id="date">2024. augusztus 12</div>
+
+    <script>
+        function updateCountdown() {
+            const targetDate = new Date('2024-08-12T00:00:00');
+            const now = new Date();
+            const difference = targetDate - now;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerHTML =
+                `${days} nap ${hours} óra ${minutes} perc ${seconds} másodperc`;
+
+            if (difference < 0) {
+                document.getElementById('countdown').innerHTML = "Lejárt az idő!";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

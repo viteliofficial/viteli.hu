@@ -232,6 +232,13 @@ select{
 a{
     text-decoration: none;
 }
+.gombok img{
+    height: 120px;
+    border-radius: 100px;
+    text-align: center;
+    margin: center;
+    float: center;
+}
 
 @media screen and (max-width: 1000px){
 body{

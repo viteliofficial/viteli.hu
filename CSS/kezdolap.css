@@ -404,26 +404,30 @@ width: 200px;
 }
 .egyebweboldalak{
     font-family: 'TW-Cen-MT-Condensed';
-    color: black;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.056);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
     transition: all 1s;
     float: center;
     text-align: center;
     padding: auto;
-    background-color: white;
     border-radius: 15px;
 }
 
 .egyebweboldalak a {
-    font-size: 0.6cm;
-    color: black;
+    font-size: 0.7cm;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.056);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
     transition: all 0.5s;
     padding: auto;
     text-decoration: none;
 }
 
 .egyebweboldalak a:hover {
-    font-size: 0.7cm;
-    color: #000000;
+    font-size: 0.65cm;
+    color: rgb(192, 192, 192);
+
     transition: all 0.4s;
     padding: auto;
     border-radius: 15px; 

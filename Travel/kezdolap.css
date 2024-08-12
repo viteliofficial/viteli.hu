@@ -209,6 +209,14 @@ select{
     transition: all 0.4s;
     transition: all 0.5s;
 }
+.gombok img{
+    height: 120px;
+    border-radius: 100px;
+    text-align: center;
+    margin: center;
+    float: center;
+}
+
 a{
     text-decoration: none;
 }

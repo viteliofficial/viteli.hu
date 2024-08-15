@@ -1,9 +1,10 @@
-let értesítések_engedélyezve = false //Alap Érték
+let notificationsEnabled = false; // Default value
 
-function Értesítés_Engedélykérés() {
-    Notification.requestPermission().then(perm => {
-        if (perm === "granted") {
-           értesítések_engedélyezve = true
-        }
-    })
+async function requestNotificationPermission() {
+    try {
+        const permission = await Notification.requestPermission();
+        notificationsEnabled = (permission === "granted");
+    } catch (error) {
+        console.error("Error requesting notification permission:", error);
+    }
 }

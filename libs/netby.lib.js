@@ -1,12 +1,28 @@
-var lib_version = 0.8;
-var developers = ["NetBy"];
+// Define constants
+const LIB_VERSION = "0.8";
+const DEVELOPERS = ["NetBy"];
+const STORAGE_KEY = "NetBy-Lib";
 
-var Now_Date = new Date();
+// Function to get current date and time as a formatted string
+function getCurrentDateTime() {
+    return new Date().toLocaleString();
+}
 
-console.log(Now_Date.toLocaleString() + " v" + lib_version + " DEV: " + developers)
+// Function to log and store library information
+function logAndStoreLibraryInfo() {
+    const dateTime = getCurrentDateTime();
+    const logMessage = `${dateTime} v${LIB_VERSION} DEV: ${DEVELOPERS.join(", ")}`;
 
-localStorage.setItem("NetBy-Lib", Now_Date.toLocaleString() + " v" + lib_version + " DEV: " + developers )
+    // Log to console
+    console.log(logMessage);
 
-//Update
+    // Store in local storage
+    try {
+        localStorage.setItem(STORAGE_KEY, logMessage);
+    } catch (e) {
+        console.error("Failed to save to localStorage:", e);
+    }
+}
 
-
+// Call the function to execute logging and storage
+logAndStoreLibraryInfo();

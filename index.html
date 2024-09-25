@@ -1,6 +1,6 @@
 <!---
 
-  Weboldal Verzió: V3.4
+  Weboldal Verzió: V3.5
   Készítette: Csiba Zsombor
 --> 
 
@@ -13,24 +13,17 @@
     <link rel="stylesheet" href="CSS/kezdolap.css">
     <link rel="stylesheet" href="CSS/scrollbar.css">
 
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>  
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-messaging.js"></script>  
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>  
-    <script src="../JS/engedélyek.js"></script>
-
+    <script src="JS/countdown-netby.js"></script>
+    <script src="JS/engedélyek.js"></script>
     <link rel="stylesheet" href="CSS/all.min.css"/>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <title>Kezdőlap</title>
     <script src="JS/jquery.min.js"></script>
-
     <meta property="og:title" content="NetBy">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://netby-official.github.io/NetBy.hu">
+    <meta property="og:url" content="https://netbyofficial.github.io/NetBy.hu/">
     <meta name="keywords" content="NetBy Weboldal">
-    <meta name="description" content="NetBy Weboldala">
+    <meta name="description" content="NetBy Hivatalos Weboldala">
 </head>
 <body onload="requestNotificationPermission()">
 
@@ -53,6 +46,31 @@
   </header>
 
 
+    <div id="countdown" class="countdown">
+
+      <div class="time">
+       <h2 id="days">0</h2>
+       <small>Nap</small>
+      </div>
+    
+      <div class="time">
+       <h2 id="hours">0</h2>
+       <small>Óra</small>
+      </div>
+    
+      <div class="time">
+       <h2 id="minutes">0</h2>
+       <small>Perc</small>
+      </div>
+    
+      <div class="time">
+       <h2 id="seconds">0</h2>
+       <small>Másodperc</small>
+      </div>
+    <br>
+    
+     </div><br>
+   <!--- SZÖVEG IDE --> <center style="color: rgb(255, 201, 23); font-size: 1cm; text-decoration: underline;">Minden megváltozik!</center>
 
     <div class="udvozollek">
       <h1>Üdvözöllek a Weboldalon!</h1> 
@@ -61,24 +79,16 @@
     </div> 
 
     <center>
-      <div class="dc">
-      <h2> > Discord < </h2><br>
-      
-      <iframe src="https://discord.com/widget?id=1253305675174641705&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </center><br></div>
+      <h2 style="color: white; background-color: rgba(0, 0, 0, 0.856);; border-radius: 15px; font-family: QuickSand-Bold;">nem szeretnél lemaradni videóimról? <br>Csatlakozz Discord szerveremhez</h2><br>
+      <iframe src="https://discord.com/widget?id=1100107894499852371&theme=dark" width="280" height="600" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </center><br>
       <div class="egyebweboldalak">
         
-
-      <div class="underline"><h4>Általam fejlesztett</h4></div>
+      <div class="underline"><h4>Fejlesztett Weboldalak:</h4></div>
        
-       <a href="https://netby-official.github.io/NBCo"><strong style="color: rgb(224, 172, 28); font-size: 1cm;">NBCo</strong></a>
-       <br>
-       <a href="https://netby-official.github.io/NetBy-utmutatok"><strong>Útmutatók</strong></a>
-       <br>
-       <a href="AZISX/index.html">AZISX</a>
+       <a href="https://netbyofficial.github.io/NetBy-Cleaner"><strong>@NetBy Cleaner</strong></a>
        <br><br>
       </div>
-
 
 <footer>
   <p>NetBy @ 2024 Minden jog fenntartva.</p>
@@ -89,7 +99,4 @@
 <script src="JS/sütik.js"></script>
 <script src="libs/netby.lib.js"></script>
 <script src="smooth-scroll.js"></script>
-<script src="traffic.js"></script>
-<script src="cache.js"></script>
-
 </html>
